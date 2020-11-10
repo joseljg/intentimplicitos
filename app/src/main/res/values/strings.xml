@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">intent Implícitos</string>
+    <string name="edt_url">http://www.url.com</string>
+    <string name="edt_localizacion">Localizacion</string>
+    <string name="edt_texto_compartido">Texto compartido</string>
+    <string name="bt_url">Abrir URL</string>
+    <string name="bt_localizacion">Localizar en Mapa</string>
+    <string name="bt_texto_compartido">Compartir Texto</string>
+    <string name="txt_textocompartido">Texto Compartido ....</string>
+</resources>

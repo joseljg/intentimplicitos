@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiah1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiah2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiav1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiav2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <EditText
+        android:id="@+id/edt_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/edt_url"
+        android:ems="10"
+        android:hint="@string/edt_url"
+        android:inputType="textUri"
+        app:layout_constraintStart_toStartOf="@+id/guiav1"
+        app:layout_constraintTop_toTopOf="@+id/guiah1" />
+
+    <Button
+        android:id="@+id/bt_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="abrirSitioWeb"
+        android:text="@string/bt_url"
+        app:layout_constraintStart_toStartOf="@+id/guiav1"
+        app:layout_constraintTop_toBottomOf="@+id/edt_url" />
+
+    <EditText
+        android:id="@+id/edt_localizacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/edt_localizacion"
+        android:ems="10"
+        android:hint="@string/edt_localizacion"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/guiav2"
+        app:layout_constraintTop_toTopOf="@+id/guiah1" />
+
+    <Button
+        android:id="@+id/bt_localizacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="abrirLocalizacion"
+        android:text="@string/bt_localizacion"
+        app:layout_constraintStart_toStartOf="@+id/guiav2"
+        app:layout_constraintTop_toBottomOf="@+id/edt_localizacion" />
+
+    <EditText
+        android:id="@+id/edt_texto_compartido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints="@string/edt_texto_compartido"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/edt_texto_compartido"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="@+id/guiav1"
+        app:layout_constraintTop_toBottomOf="@+id/bt_url" />
+
+    <Button
+        android:id="@+id/bt_texto_compartido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="compartirTexto"
+        android:text="@string/bt_texto_compartido"
+        app:layout_constraintStart_toStartOf="@+id/guiav1"
+        app:layout_constraintTop_toBottomOf="@+id/edt_texto_compartido" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
